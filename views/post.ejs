@@ -1,0 +1,14 @@
+<%- include("Partials/header") -%>
+<h1><%= title %></h1>
+<p><%= content%></p>
+
+<form action="/delete/<%= _id %>" method="POST">
+  <div class="form-group">
+    <label>Password:</label>
+    <input type="password" class="form-control" name="password" placeholder="Enter password to delete this post" required>
+  </div>
+  <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+
+<%- include("Partials/footer") -%>
+
